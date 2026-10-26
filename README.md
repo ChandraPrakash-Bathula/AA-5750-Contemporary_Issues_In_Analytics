@@ -4,7 +4,7 @@
 
 This repository contains course materials for **AA-5750: Contemporary Issues in Analytics** at Saint Louis University (SLU).
 
-The course provides a practical, architecture-driven exploration of contemporary artificial intelligence. Students progress from data augmentation and convolutional neural networks (CNNs) to residual networks (ResNets), sequence modeling, transformer-based language models, AI agents, and retrieval-augmented generation (RAG).
+The course provides a practical, architecture-driven exploration of contemporary artificial intelligence. Students progress from data augmentation and foundational neural networks to convolutional and residual architectures, sequence modeling, transformer-based language models, AI agents, and retrieval-augmented generation (RAG).
 
 Rather than treating AI models as black boxes, the course emphasizes understanding their underlying principles, computational mechanisms, architectural design choices, implementation, and practical applications through hands-on learning and experimentation.
 
@@ -15,8 +15,8 @@ The course follows an eight-week progression, connecting foundational machine le
 | Week | Topic | Key Concepts |
 |---|---|---|
 | 1 | Data Augmentation | Data preprocessing, image and text augmentation, dataset diversity, generalization |
-| 2 | Convolutional Neural Networks (CNNs) | Convolution, filters, feature maps, pooling, receptive fields, image classification |
-| 3 | Residual Networks (ResNets) | Residual blocks, skip connections, identity mappings, deep network optimization |
+| 2 | Multilayer Perceptrons (MLPs) | Neural network fundamentals, forward propagation, backpropagation, activation functions, optimization |
+| 3 | Convolutional Neural Networks| CNN foundations, convolution, feature maps, residual blocks, skip connections, deep network optimization |
 | 4 | ResNet: Advanced Exploration | Architectural analysis, training experiments, convergence, performance evaluation, error analysis |
 | 5 | Sequence Modeling: LSTMs and GRUs | Recurrent neural networks, hidden states, gating mechanisms, sequential dependencies |
 | 6 | Transformers and BERT | Attention, self-attention, positional encoding, transformer architecture, contextual representations |
@@ -38,36 +38,38 @@ Explore how data augmentation increases training-data diversity and helps machin
 - Evaluating augmentation's impact on model performance
 - Understanding the relationship between augmentation and generalization
 
-### Week 2 — Convolutional Neural Networks (CNNs)
+### Week 2 — Multilayer Perceptrons (MLPs)
 
-Study the architecture and computational principles of convolutional neural networks, focusing on how convolutional filters extract spatial features and build hierarchical visual representations.
+Build a foundation in neural network architecture, learning, and optimization. Examine how networks transform input features through successive layers and learn parameters using gradient-based optimization.
 
 **Key areas:**
-- CNN architecture and its components
-- Convolution operations, kernels, and filters
-- Stride, padding, and output dimensions
-- Feature maps and receptive fields
-- Activation functions and nonlinear feature learning
-- Pooling and spatial downsampling
-- Parameter sharing and local connectivity
-- CNN training and image classification
-- Visualizing and interpreting learned features
-- Evaluating model performance and generalization
+- Artificial neurons and perceptrons
+- Input, hidden, and output layers
+- Weights, biases, and network parameters
+- Forward propagation
+- Activation functions and nonlinear transformations
+- Loss functions and objective optimization
+- Backpropagation and the chain rule
+- Gradient descent and optimization algorithms
+- Training, validation, and testing
+- Overfitting, generalization, and model evaluation
 
 ### Week 3 — Residual Networks (ResNets)
 
-Explore how residual learning extends convolutional neural networks to support the training of deeper architectures and address optimization challenges associated with increasing network depth.
+Study the evolution of deep neural networks, beginning with convolutional neural network (CNN) foundations and progressing to residual learning. Examine how convolutional layers extract hierarchical visual features and how skip connections help train deeper architectures.
 
 **Key areas:**
-- Review of CNN building blocks
+- CNN foundations and architectural components
+- Convolution operations, filters, and feature maps
+- Stride, padding, pooling, and receptive fields
+- Hierarchical visual feature extraction
 - Limitations of plain deep convolutional networks
 - Residual functions and residual blocks
 - Skip connections and identity mappings
-- Gradient propagation and optimization
+- Gradient propagation and deep network optimization
 - ResNet architecture and its components
 - Image classification experiments
 - Comparing CNN and ResNet performance
-- Understanding the benefits and limitations of residual learning
 
 ### Week 4 — ResNet: Advanced Exploration
 
@@ -158,7 +160,7 @@ Students are encouraged to:
 3. **Implement and experiment:** Apply concepts through programming exercises, model implementations, and practical demonstrations.
 4. **Evaluate performance:** Analyze experimental results, training behavior, model predictions, and limitations using appropriate evaluation metrics.
 5. **Compare design choices:** Investigate how architectural and training decisions influence performance, efficiency, and generalization.
-6. **Connect ideas across weeks:** Understand how advances in neural networks, convolutional architectures, residual learning, sequence modeling, attention, and retrieval contribute to modern AI systems.
+6. **Connect ideas across weeks:** Understand how neural network fundamentals lead to convolutional architectures, residual learning, sequence modeling, attention, and modern retrieval-based AI systems.
 
 ## Repository Structure
 
@@ -166,7 +168,7 @@ Students are encouraged to:
 AA-5750-Contemporary_Issues_In_Analytics/
 │
 ├── AA-5750 Week-1 2/    # Data Augmentation
-├── AA-5750 Week-2/      # Convolutional Neural Networks (CNNs)
+├── AA-5750 Week-2/      # Multilayer Perceptrons (MLPs)
 ├── AA-5750 Week-3/      # Residual Networks (ResNets)
 ├── AA-5750 Week-4/      # ResNet: Advanced Exploration
 ├── AA-5750 Week-5/      # LSTMs and GRUs
@@ -208,11 +210,12 @@ This repository is intended primarily for **Saint Louis University (SLU) student
 The course materials support students in:
 
 - Understanding foundational machine learning and deep learning concepts.
-- Exploring CNNs and residual architectures through implementation and experimentation.
+- Implementing and evaluating multilayer perceptrons.
+- Exploring convolutional and residual architectures through hands-on experimentation.
 - Developing an understanding of sequential models, transformers, and pretrained language models.
 - Building practical skills in AI agents and retrieval-augmented generation.
 - Connecting theoretical principles with real-world AI applications.
-- Developing the ability to analyze model architectures, evaluate experimental results, and identify system limitations.
+- Analyzing model architectures, evaluating experimental results, and identifying system limitations.
 - Establishing a foundation for further study, applied research, and projects in contemporary artificial intelligence.
 
 ## Instructor
